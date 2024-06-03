@@ -1,0 +1,387 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header decoration*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #A9A9A9;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 100px;
+  background: #F5F5DC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo img {
+  width: 50;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #e2504c;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #e2504c;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.perfil-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/*Otro*/
+
+h1 {
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #1a923c;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #1a923c;
+  cursor: pointer;
+  width: 100px;
+  transition: .6s ease;
+}
+
+button:hover {
+  background-color: white;
+  color: #1a923c;
+  border-radius: 10px;
+  transition: .6s ease;
+}
+
+
+/* .botones_menu button {
+  background-color: #008ee0;
+  color: white;
+  padding: 10px 20px;
+  margin: 8vh;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: 33vh;
+  height: 33vh;
+} */
+
+.Menu {
+  margin-top: -10vh;
+}
+
+.botones_menu {
+  display: flex;
+  height: 35vh;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botones_menu button {
+  background-color: transparent;
+  height: 15vh;
+  color: #000;
+  padding: 20px 50px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  border: 3px solid #000;
+}
+
+.botones_menu button:hover {
+  background-color: #111;
+  border-color: white;
+  color: white;
+}
+
+.Div_Enviar, .Div_Lista_Info, .Div_Lista {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.form_new_info {
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  justify-content: center;
+  /* Centra los elementos verticalmente */
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor */
+}
+
+.select_idprod_info,
+.select_idstat_info,
+.input_numprod_info,
+.input_nomprod_info,
+.btn_guardar_info,
+.btn_update_info {
+  width: 25vh;
+  height: 100%;
+  border: none;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+.btn_new {
+  background-color: #003a82;
+  border: 1px solid #003a82;
+}
+
+.btn_new:hover {
+  background-color: white;
+  color: #003a82;
+}
+
+.btn_save,
+.btn_guardar_info {
+  background-color: #1a923c;
+  border: 1px solid #1a923c;
+}
+
+.btn_save:hover,
+.btn_guardar_info:hover {
+  background-color: white;
+  color: #1a923c;
+}
+
+.btn_update_info,
+.btn_update {
+  background-color: #ab9f00;
+  border: 1px solid #ab9f00;
+}
+
+.btn_update_info:hover,
+.btn_update:hover {
+  background-color: white;
+  color: #ab9f00;
+}
+
+.btn_edit {
+  background-color: #417bd3;
+  border: 1px solid #417bd3;
+}
+
+.btn_edit:hover {
+  background-color: white;
+  color: #417bd3;
+}
+
+.btn_search {
+  background-color: #606654;
+  border: 1px solid #606654;
+}
+
+.btn_search:hover {
+  background-color: white;
+  color: #606654;
+}
+
+.btn_delete {
+  background-color: #e2504c;
+  border: 1px solid #e2504c;
+}
+
+.btn_delete:hover {
+  background-color: white;
+  color: #e2504c;
+}
+
+.tableFixHead, .tableFixHead_Info, .tableFixHead_Prod {
+  overflow-y: auto;
+  /* make the table scrollable if height is more than 200 px  */
+}
+
+.tableFixHead {
+  height: 50vh;
+}
+
+.tableFixHead_Info {
+  height: 65vh;
+  width: 195vh;
+}
+
+.tableFixHead_Prod {
+  height: 65vh;
+}
+
+.tableFixHead thead th, .tableFixHead tfoot tr,
+.tableFixHead_Info thead th, .tableFixHead_Info tfoot tr,
+.tableFixHead_Prod thead th, .tableFixHead_Prod tfoot tr {
+  position: sticky;
+}
+
+.tableFixHead thead th, .tableFixHead_Info thead th, .tableFixHead_Prod thead th{
+  top: 0;
+}
+
+.tableFixHead tfoot tr, .tableFixHead_Info tfoot tr, .tableFixHead_Prod tfoot tr {
+  bottom: 0
+}
+
+/* .tableFixHead tfoot th {
+  position: sticky;
+} */
+
+.tableFixHead table, .tableFixHead_Info table, .tableFixHead_Info table {
+  border-collapse: collapse;
+  /* make the table borders collapse to each other */
+  width: 100%;
+  
+}
+
+.tableFixHead th, .tableFixHead  td,
+.tableFixHead_Info th, .tableFixHead_Info td,
+.tableFixHead_Prod th, .tableFixHead_Prod td{
+  padding: 8px 16px;
+  border: 1px solid #ccc; 
+}
+
+.Busqueda_producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5vh; /* Separar elementos con 10px */
+}
+
+.Busqueda_producto .input_buscar_codigo {
+  width: 30vh;
+  text-align: center;
+}
+
+.Busqueda_producto .boton_buscar_codigo {
+  width: 15vh;
+}
+
+.form_new{ 
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  justify-content: center;
+  /* Centra los elementos verticalmente */
+  width: 100%;
+}
+
+.form_new button { 
+  width: 56%;
+}
