@@ -5,6 +5,7 @@ import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 window.backendHostUrl = "http://localhost:8800/api";
+window.frontendGitHubPages = "/-Practicas_GitHub_Pages/build";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

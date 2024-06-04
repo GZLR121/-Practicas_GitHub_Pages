@@ -21,7 +21,7 @@ function App() {
       <header>
         <h3 className="logo"><a href="/"><img src="../logo.png" alt='logo'/></a></h3>
         <nav className="navigation">
-            <a href="/">Inicio</a>
+            <a href={`${window.frontendGitHubPages}/`}>Inicio</a>
             <a href="/lista_info">Productos Detalles</a>
             <a href="/productos">Productos</a>
             <a href="/tipos_status">Tipo de Status</a>
@@ -38,7 +38,7 @@ function App() {
           <Route path="/tipos_status/" element={<Status />} />
           <Route path="/crear_status" element={<CrearStatus />} />
           <Route path="/editar_status/:id" element={<EditarStatus />} />
-          <Route path="/" element={<Menu />} />
+          <Route path={`${window.frontendGitHubPages}/`} element={<Menu />} />
           <Route path="/enviar_a_almacen" element={<EnviarAlmacen />} />
           <Route path="/enviar_a_transito" element={<EnviarTransito />} />
           <Route path="/enviar_a_vendido" element={<EnviarVendido />} />
