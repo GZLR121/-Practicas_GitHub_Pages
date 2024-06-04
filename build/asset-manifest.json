@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Practicas_GitHub_Pages/static/css/main.24bbbb83.css",
-    "main.js": "/Practicas_GitHub_Pages/static/js/main.eafe0a1c.js",
-    "index.html": "/Practicas_GitHub_Pages/index.html",
-    "main.24bbbb83.css.map": "/Practicas_GitHub_Pages/static/css/main.24bbbb83.css.map",
-    "main.eafe0a1c.js.map": "/Practicas_GitHub_Pages/static/js/main.eafe0a1c.js.map"
+    "main.css": "/-Practicas_GitHub_Pages/static/css/main.24bbbb83.css",
+    "main.js": "/-Practicas_GitHub_Pages/static/js/main.eafe0a1c.js",
+    "index.html": "/-Practicas_GitHub_Pages/index.html",
+    "main.24bbbb83.css.map": "/-Practicas_GitHub_Pages/static/css/main.24bbbb83.css.map",
+    "main.eafe0a1c.js.map": "/-Practicas_GitHub_Pages/static/js/main.eafe0a1c.js.map"
   },
   "entrypoints": [
     "static/css/main.24bbbb83.css",
