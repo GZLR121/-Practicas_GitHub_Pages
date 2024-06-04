@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://GZLR121.github.io/Practicas_GitHub_Pages/",
+  "homepage": "https://gzlr121.github.io/-Practicas_GitHub_Pages/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
